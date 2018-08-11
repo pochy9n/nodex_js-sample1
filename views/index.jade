@@ -1,0 +1,12 @@
+extends layout
+
+block script
+	script(type='text/javascript').
+		hello_world();
+
+block content
+	h1= title
+	p テキストエリアに一定時間ごとにメッセージを追加する。
+	form(name="form1")
+		textarea(name="text1", cols="80", rows="10", readonly)
+
